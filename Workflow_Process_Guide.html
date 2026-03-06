@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Workflow Process Guide — Norwegian Pavilion Barcelona 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    font-size: 11pt;
+    color: #222;
+    background: #F0F2F5;
+    padding: 30px 20px;
+  }
+  .page { max-width: 860px; margin: 0 auto; }
+
+  .title-block {
+    background: #1F3864;
+    color: #fff;
+    border-radius: 6px 6px 0 0;
+    padding: 28px 36px 22px;
+    margin-bottom: 2px;
+  }
+  .title-block h1 { font-size: 22pt; font-weight: 700; }
+  .title-block h2 { font-size: 12pt; font-weight: 400; opacity: 0.88; margin-top: 4px; }
+  .title-bar {
+    background: #2E74B5;
+    color: #fff;
+    padding: 10px 36px;
+    font-size: 10pt;
+    border-radius: 0 0 6px 6px;
+    margin-bottom: 28px;
+  }
+
+  /* Nav */
+  .nav {
+    background: #fff;
+    border: 1px solid #dde3ed;
+    border-radius: 6px;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .nav a {
+    display: inline-block;
+    background: #EEF3FA;
+    color: #1F3864;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 9.5pt;
+    font-weight: 600;
+    border: 1px solid #BDD7EE;
+  }
+  .nav a:hover { background: #1F3864; color: #fff; }
+
+  /* Cards */
+  .card {
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #dde3ed;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .card-header {
+    background: #1F3864;
+    color: #fff;
+    padding: 14px 24px;
+  }
+  .card-header h2 { font-size: 13pt; font-weight: 700; }
+  .card-body { padding: 20px 28px 24px; }
+
+  /* Status table */
+  .status-table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+  .status-table th {
+    background: #1F3864;
+    color: #fff;
+    padding: 9px 12px;
+    text-align: left;
+    font-size: 10pt;
+  }
+  .status-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 10pt;
+    vertical-align: top;
+  }
+  .status-table tr:last-child td { border-bottom: none; }
+  .badge {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-weight: 700;
+    font-size: 9.5pt;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .s1 { background: #A0A0A0; }
+  .s2 { background: #BF9000; color:#fff; }
+  .s3 { background: #2E74B5; }
+  .s4 { background: #ED7D31; }
+  .s5 { background: #70AD47; }
+  .s6 { background: #1F78C1; }
+  .s7 { background: #375623; }
+  .s8 { background: #C00000; }
+
+  /* Cadence timeline */
+  .timeline { list-style: none; margin: 8px 0; }
+  .timeline li {
+    display: flex;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    align-items: flex-start;
+  }
+  .timeline li:last-child { border-bottom: none; }
+  .day-badge {
+    background: #1F3864;
+    color: #fff;
+    font-weight: 700;
+    font-size: 9.5pt;
+    border-radius: 4px;
+    padding: 3px 10px;
+    min-width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .timeline .action { font-size: 10.5pt; line-height: 1.5; }
+  .timeline .action strong { color: #1F3864; }
+
+  /* Checklist */
+  .checklist { list-style: none; margin: 8px 0; }
+  .checklist li {
+    display: flex;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 10.5pt;
+    align-items: flex-start;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .check { color: #70AD47; font-size: 14pt; font-weight: 700; flex-shrink: 0; line-height: 1.2; }
+  .num-circle {
+    background: #2E74B5;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  /* Template ref table */
+  .ref-table { width: 100%; border-collapse: collapse; }
+  .ref-table th {
+    background: #1F3864;
+    color: #fff;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 10pt;
+  }
+  .ref-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 10pt;
+  }
+  .ref-table tr:nth-child(even) td { background: #F5F8FC; }
+  .ref-table tr:last-child td { border-bottom: none; }
+
+  /* E-sign section */
+  .esign-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 12px 0;
+  }
+  .esign-box {
+    border: 1px solid #BDD7EE;
+    border-radius: 6px;
+    padding: 14px;
+    background: #F5F8FC;
+  }
+  .esign-box h3 { font-size: 11pt; color: #1F3864; margin-bottom: 6px; }
+  .esign-box p { font-size: 9.5pt; color: #444; line-height: 1.5; }
+  .esign-box .tag {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 2px 7px;
+    font-size: 8.5pt;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .tag-free { background: #E2EFDA; color: #375623; }
+  .tag-paid { background: #FCE4D6; color: #7B2E00; }
+  .tag-rec { background: #70AD47; color: #fff; }
+
+  /* Rules */
+  .rules-list { list-style: none; margin: 8px 0; counter-reset: rule; }
+  .rules-list li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 10.5pt;
+    line-height: 1.5;
+  }
+  .rules-list li:last-child { border-bottom: none; }
+  .rule-num {
+    background: #1F3864;
+    color: #fff;
+    font-weight: 700;
+    min-width: 28px; height: 28px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    font-size: 10pt;
+  }
+
+  .tip {
+    background: #E2EFDA;
+    border-left: 4px solid #70AD47;
+    padding: 10px 14px;
+    border-radius: 0 4px 4px 0;
+    font-size: 9.5pt;
+    color: #375623;
+    margin-top: 12px;
+  }
+  .warning {
+    background: #FCE4D6;
+    border-left: 4px solid #ED7D31;
+    padding: 10px 14px;
+    border-radius: 0 4px 4px 0;
+    font-size: 9.5pt;
+    color: #7B2E00;
+    margin-top: 12px;
+  }
+
+  p { margin-bottom: 10px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="title-block">
+    <h1>&#127475;&#127476; Workflow Process Guide</h1>
+    <h2>Norwegian Pavilion — Barcelona Seafood Expo 2026</h2>
+  </div>
+  <div class="title-bar">
+    Your step-by-step system for recruiting pavilion participants — faster and with less email chaos
+  </div>
+
+  <!-- NAV -->
+  <div class="nav">
+    <a href="#stages">The 7 Stages</a>
+    <a href="#cadence">Follow-Up Cadence</a>
+    <a href="#weekly">Weekly Review</a>
+    <a href="#esign">E-Signing</a>
+    <a href="#templates">Template Quick-Ref</a>
+    <a href="#rules">Key Rules</a>
+  </div>
+
+  <!-- STAGES -->
+  <div class="card" id="stages">
+    <div class="card-header"><h2>The 8 Status Stages</h2></div>
+    <div class="card-body">
+      <p>Use these exact values in the <strong>Status</strong> column of your Google Sheet. The colour coding applies automatically.</p>
+      <table class="status-table">
+        <thead>
+          <tr>
+            <th style="width:180px">Status</th>
+            <th>Meaning</th>
+            <th>Your next action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge s1">To contact</span></td>
+            <td>Not yet reached out</td>
+            <td>Send Template 1 today</td>
+          </tr>
+          <tr>
+            <td><span class="badge s2">Contacted - no reply</span></td>
+            <td>Email sent, no response after 5 days</td>
+            <td>Send Template 2</td>
+          </tr>
+          <tr>
+            <td><span class="badge s3">In dialogue</span></td>
+            <td>Two-way conversation started</td>
+            <td>Follow up within 48h of every exchange</td>
+          </tr>
+          <tr>
+            <td><span class="badge s4">Meeting booked</span></td>
+            <td>Call or meeting scheduled</td>
+            <td>Send Template 4 confirmation</td>
+          </tr>
+          <tr>
+            <td><span class="badge s5">Proposal sent</span></td>
+            <td>Pricing sheet sent</td>
+            <td>Follow up after 3 business days</td>
+          </tr>
+          <tr>
+            <td><span class="badge s6">Contract sent</span></td>
+            <td>Contract / signing link sent</td>
+            <td>Follow up after 2 business days</td>
+          </tr>
+          <tr>
+            <td><span class="badge s7">SIGNED &amp; PAID</span></td>
+            <td>Contract signed and deposit received</td>
+            <td>Send Template 8 welcome email</td>
+          </tr>
+          <tr>
+            <td><span class="badge s8">Declined / No</span></td>
+            <td>Company said no — keep in sheet for future shows</td>
+            <td>Note the reason — re-contact for 2027</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- CADENCE -->
+  <div class="card" id="cadence">
+    <div class="card-header"><h2>Follow-Up Cadence</h2></div>
+    <div class="card-body">
+      <p><strong>Cold outreach — no response yet:</strong></p>
+      <ul class="timeline">
+        <li>
+          <span class="day-badge">Day 0</span>
+          <div class="action">Send <strong>Template 1</strong> — initial outreach. Personalise line 2 with something specific to their company.</div>
+        </li>
+        <li>
+          <span class="day-badge">Day 5</span>
+          <div class="action">No reply? Send <strong>Template 2</strong> — short follow-up. Keep it light.</div>
+        </li>
+        <li>
+          <span class="day-badge">Day 10</span>
+          <div class="action">Still no reply? Send <strong>Template 3</strong> + attempt a <strong>phone call</strong>. This is your last attempt.</div>
+        </li>
+        <li>
+          <span class="day-badge">Day 11+</span>
+          <div class="action">No response after 3 attempts → mark as <strong>Declined / No</strong> and note "No response" in the Notes column. Move on.</div>
+        </li>
+      </ul>
+
+      <p style="margin-top:18px"><strong>Once in dialogue:</strong></p>
+      <ul class="timeline">
+        <li><span class="day-badge">48h rule</span><div class="action">Follow up within <strong>48 hours</strong> of every email or call exchange. Never leave a conversation hanging.</div></li>
+        <li><span class="day-badge">Gone quiet</span><div class="action">If they stop replying after engaging, treat as a new Day 0 — max 2 more follow-ups before marking Declined.</div></li>
+      </ul>
+
+      <p style="margin-top:18px"><strong>Once proposal sent:</strong></p>
+      <ul class="timeline">
+        <li><span class="day-badge">Day 3</span><div class="action">Follow up if no reply. Ask if they have questions. Mention early bird deadline if it applies.</div></li>
+        <li><span class="day-badge">Day 6</span><div class="action">Still no reply → <strong>call them directly</strong>. Email alone is not enough at this stage.</div></li>
+      </ul>
+
+      <p style="margin-top:18px"><strong>Once contract sent:</strong></p>
+      <ul class="timeline">
+        <li><span class="day-badge">Day 2</span><div class="action">Follow up if not signed. Check your e-sign tool first — you can see if they opened the link.</div></li>
+        <li><span class="day-badge">Day 5</span><div class="action">Still unsigned → call and offer to walk through the signing live on a quick call. Takes 2 minutes.</div></li>
+      </ul>
+
+      <p style="margin-top:18px"><strong>Once signed — payment:</strong></p>
+      <ul class="timeline">
+        <li><span class="day-badge">Same day</span><div class="action">Invoice goes out the <strong>same day</strong> as the signed contract.</div></li>
+        <li><span class="day-badge">3 days before due</span><div class="action">Send <strong>Template 7a</strong> — friendly reminder.</div></li>
+        <li><span class="day-badge">Overdue</span><div class="action">Send <strong>Template 7b</strong> + call immediately. Do not wait.</div></li>
+      </ul>
+
+      <div class="warning">
+        &#9888; <strong>Hard deadline rule:</strong> Communicate a firm spot deadline in every proposal and contract email — <em>"Spots are limited. To secure your place, we need a signed contract by [DATE]."</em> Companies move faster when the deadline is real.
+      </div>
+    </div>
+  </div>
+
+  <!-- WEEKLY REVIEW -->
+  <div class="card" id="weekly">
+    <div class="card-header"><h2>Weekly Review Routine — 30 Minutes Every Monday</h2></div>
+    <div class="card-body">
+      <ul class="checklist">
+        <li><div class="num-circle">1</div><div>Open <strong>Company Pipeline</strong> sheet. Sort by <strong>Next Follow-Up Date</strong> — oldest first.</div></li>
+        <li><div class="num-circle">2</div><div>Action every company due for follow-up today. Don't skip anyone.</div></li>
+        <li><div class="num-circle">3</div><div>Update <strong>Last Contact Date</strong> and <strong>Next Follow-Up Date</strong> for every company you touch.</div></li>
+        <li><div class="num-circle">4</div><div>Log every action in the <strong>Follow-Up Log</strong> sheet — date, what you did, next step.</div></li>
+        <li><div class="num-circle">5</div><div>Check the <strong>Budget Dashboard</strong> — are you on track to fill spots and cover costs?</div></li>
+        <li><div class="num-circle">6</div><div>Any company where <strong>Next Follow-Up Date is blank or past</strong> = you are behind. Fix it now.</div></li>
+      </ul>
+      <div class="tip">&#128161; The tracker only works if you update it the same day as every contact. Never rely on memory.</div>
+    </div>
+  </div>
+
+  <!-- E-SIGNING -->
+  <div class="card" id="esign">
+    <div class="card-header"><h2>E-Signing — Move Away from PDF Email</h2></div>
+    <div class="card-body">
+      <p>Sending PDF → email → sign → scan → send back can take <strong>3–5 days</strong>. A signing link takes <strong>under 2 minutes</strong> for the company. This one change alone will speed up your close rate significantly.</p>
+      <div class="esign-grid">
+        <div class="esign-box">
+          <div class="tag tag-rec">&#11088; Recommended to start</div>
+          <h3>Docuseal</h3>
+          <p>Free cloud version available. Upload your contract PDF, define where to sign, send a link. Signer clicks, signs with mouse or touch, done. You get the signed PDF automatically.</p>
+        </div>
+        <div class="esign-box">
+          <div class="tag tag-paid">Paid</div>
+          <h3>DocuSign</h3>
+          <p>Industry standard — most companies recognise and trust it immediately. ~USD 10–25/month. Best if you send high volumes or need a full audit trail for large clients.</p>
+        </div>
+        <div class="esign-box">
+          <div class="tag tag-paid">Paid / Bundled</div>
+          <h3>Adobe Acrobat Sign</h3>
+          <p>Included in Adobe CC subscriptions. Similar flow to DocuSign. Good option if your organisation already pays for Adobe.</p>
+        </div>
+      </div>
+      <div class="tip">&#128161; Start with <strong>Docuseal</strong> (free). If companies push back or you need more features, upgrade to DocuSign.</div>
+    </div>
+  </div>
+
+  <!-- TEMPLATE REF -->
+  <div class="card" id="templates">
+    <div class="card-header"><h2>Email Template Quick-Reference</h2></div>
+    <div class="card-body">
+      <table class="ref-table">
+        <thead>
+          <tr>
+            <th style="width:40px">#</th>
+            <th>Template</th>
+            <th>When to use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Initial Outreach</td><td>First contact, Day 0</td></tr>
+          <tr><td>2</td><td>Follow-Up 1</td><td>No reply after 5 business days</td></tr>
+          <tr><td>3</td><td>Follow-Up 2 / Last attempt</td><td>No reply after another 5 days — also call</td></tr>
+          <tr><td>4</td><td>Meeting Confirmation</td><td>After booking a call</td></tr>
+          <tr><td>5</td><td>Proposal Email</td><td>Attach pricing sheet PDF</td></tr>
+          <tr><td>6</td><td>Contract Email</td><td>Include e-sign link</td></tr>
+          <tr><td>7a</td><td>Payment Reminder (friendly)</td><td>3 days before invoice due</td></tr>
+          <tr><td>7b</td><td>Payment Reminder (firm)</td><td>Invoice overdue</td></tr>
+          <tr><td>8</td><td>Welcome / Confirmed</td><td>Contract signed + deposit received</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- KEY RULES -->
+  <div class="card" id="rules">
+    <div class="card-header"><h2>6 Key Rules</h2></div>
+    <div class="card-body">
+      <ul class="rules-list">
+        <li><div class="rule-num">1</div><div>Every company always has a <strong>Next Follow-Up Date</strong>. If column K is blank or past, you are behind.</div></li>
+        <li><div class="rule-num">2</div><div><strong>Update the tracker the same day</strong> as every contact. Never rely on memory.</div></li>
+        <li><div class="rule-num">3</div><div>Every status change gets a <strong>log entry</strong> in the Follow-Up Log sheet — date, action, next step.</div></li>
+        <li><div class="rule-num">4</div><div><strong>Communicate deadlines early and repeat them.</strong> Companies move faster when the deadline is real and visible.</div></li>
+        <li><div class="rule-num">5</div><div><strong>Phone beats email</strong> at the proposal and contract stages. If they haven't replied in 5 days, call.</div></li>
+        <li><div class="rule-num">6</div><div>Never send an unsigned contract reminder without <strong>checking your e-sign tool first</strong> — they may have already opened it.</div></li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="text-align:center;font-size:9pt;color:#aaa;margin-top:20px;padding-bottom:20px;">
+    Norwegian Pavilion — Barcelona Seafood Expo 2026 &nbsp;|&nbsp; Workflow Process Guide
+  </p>
+
+</div>
+</body>
+</html>

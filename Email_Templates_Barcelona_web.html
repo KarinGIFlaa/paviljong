@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Email Templates — Norwegian Pavilion Barcelona 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    font-size: 11pt;
+    color: #222;
+    background: #F0F2F5;
+    padding: 30px 20px;
+  }
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  /* Title */
+  .title-block {
+    background: #1F3864;
+    color: #fff;
+    border-radius: 6px 6px 0 0;
+    padding: 28px 36px 22px;
+    margin-bottom: 2px;
+  }
+  .title-block h1 { font-size: 22pt; font-weight: 700; }
+  .title-block h2 { font-size: 12pt; font-weight: 400; opacity: 0.88; margin-top: 4px; }
+  .title-bar {
+    background: #2E74B5;
+    color: #fff;
+    padding: 10px 36px;
+    font-size: 10pt;
+    border-radius: 0 0 6px 6px;
+    margin-bottom: 28px;
+  }
+
+  /* Nav */
+  .nav {
+    background: #fff;
+    border: 1px solid #dde3ed;
+    border-radius: 6px;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .nav a {
+    display: inline-block;
+    background: #EEF3FA;
+    color: #1F3864;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 9.5pt;
+    font-weight: 600;
+    border: 1px solid #BDD7EE;
+    transition: background 0.15s;
+  }
+  .nav a:hover { background: #1F3864; color: #fff; }
+
+  /* Template card */
+  .template {
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #dde3ed;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .template-header {
+    background: #1F3864;
+    color: #fff;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .template-num {
+    background: #2E74B5;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14pt;
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .template-header h2 { font-size: 13pt; font-weight: 700; }
+  .template-header .when { font-size: 9.5pt; opacity: 0.82; margin-top: 2px; }
+
+  .subject-line {
+    background: #EEF3FA;
+    border-bottom: 1px solid #dde3ed;
+    padding: 10px 24px;
+    font-size: 10pt;
+  }
+  .subject-line strong { color: #1F3864; }
+  .subject-line .subj-text { font-weight: 700; color: #333; }
+
+  .template-body {
+    padding: 20px 28px 24px;
+    line-height: 1.65;
+    font-size: 10.5pt;
+  }
+  .template-body p { margin-bottom: 12px; }
+  .template-body p:last-child { margin-bottom: 0; }
+  .template-body ul {
+    margin: 8px 0 12px 24px;
+  }
+  .template-body ul li { margin-bottom: 5px; }
+  .placeholder {
+    background: #FFF8E1;
+    border: 1px solid #FFD54F;
+    border-radius: 3px;
+    padding: 0 3px;
+    color: #7B3F00;
+    font-weight: 600;
+  }
+  .sig { color: #1F3864; font-weight: 700; }
+
+  /* Two-part template (7a/7b) */
+  .sub-section {
+    border-top: 2px dashed #dde3ed;
+    padding-top: 18px;
+    margin-top: 18px;
+  }
+  .sub-label {
+    display: inline-block;
+    background: #2E74B5;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-size: 9.5pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .tip {
+    background: #E2EFDA;
+    border-left: 4px solid #70AD47;
+    border-radius: 0 4px 4px 0;
+    padding: 8px 14px;
+    font-size: 9.5pt;
+    color: #375623;
+    margin: 10px 0 0;
+  }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .nav { display: none; }
+    .template { page-break-inside: avoid; border: 1px solid #ccc; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="title-block">
+    <h1>&#127475;&#127476; Email Template Library</h1>
+    <h2>Norwegian Pavilion — Barcelona Seafood Expo 2026</h2>
+  </div>
+  <div class="title-bar">
+    8 ready-to-send templates &nbsp;|&nbsp; Replace all <span style="background:#fff3;border-radius:3px;padding:0 5px;font-weight:700">[bracketed placeholders]</span> before sending
+  </div>
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <a href="#t1">1: Initial Outreach</a>
+    <a href="#t2">2: Follow-Up 1</a>
+    <a href="#t3">3: Last Attempt</a>
+    <a href="#t4">4: Meeting Confirmed</a>
+    <a href="#t5">5: Proposal</a>
+    <a href="#t6">6: Contract</a>
+    <a href="#t7">7: Payment Reminder</a>
+    <a href="#t8">8: Welcome!</a>
+  </div>
+
+  <!-- TEMPLATE 1 -->
+  <div class="template" id="t1">
+    <div class="template-header">
+      <div class="template-num">1</div>
+      <div>
+        <h2>Initial Outreach</h2>
+        <div class="when">Day 0 — first contact</div>
+      </div>
+    </div>
+    <div class="subject-line">
+      <strong>Subject:</strong> <span class="subj-text">Norwegian Pavilion — Barcelona Seafood Expo 2026</span>
+    </div>
+    <div class="template-body">
+      <p>Hi <span class="placeholder">[First Name]</span>,</p>
+      <p>My name is Karin Greve-Isdahl, and I manage the Norwegian pavilion at international seafood trade shows. We are currently building our delegation for Barcelona Seafood Expo 2026 (taking place <span class="placeholder">[Date]</span>), and based on <span class="placeholder">[Company Name]</span>'s work in <span class="placeholder">[specific product / market area]</span>, I think this is a strong fit.</p>
+      <p>The expo attracts buyers, distributors and decision-makers from across Europe and Asia. We offer a turnkey package — you show up, we handle the stand, furniture, branding, and logistics.</p>
+      <p>Spots are limited. Would you have 15 minutes this week or next to hear more?</p>
+      <p>Best regards,<br><span class="sig">Karin Greve-Isdahl</span><br><span class="placeholder">[Phone]</span> | <span class="placeholder">[Email]</span></p>
+      <div class="tip">&#128161; Tip: Personalise line 2 with something specific to their company — a product, market, or recent news. This alone doubles reply rates.</div>
+    </div>
+  </div>
+
+  <!-- TEMPLATE 2 -->
+  <div class="template" id="t2">
+    <div class="template-header">
+      <div class="template-num">2</div>
+      <div>
+        <h2>Follow-Up 1 — No Reply</h2>
+        <div class="when">Day 5 — if no response to Template 1</div>
+      </div>
+    </div>
+    <div class="subject-line">
+      <strong>Subject:</strong> <span class="subj-text">Re: Norwegian Pavilion — Barcelona Seafood Expo 2026</span>
+    </div>
+    <div class="template-body">
+      <p>Hi <span class="placeholder">[First Name]</span>,</p>
+      <p>I sent a note last week about our Norwegian pavilion at Barcelona Seafood Expo 2026 — just wanted to make sure it didn't get buried.</p>
+      <p>Is this something worth a quick 15-minute conversation? Happy to keep it short and give you an honest picture of whether it makes sense for <span class="placeholder">[Company Name]</span> this year.</p>
+      <p>Best, <span class="sig">Karin</span></p>
+    </div>
+  </div>
+
+  <!-- TEMPLATE 3 -->
+  <div class="template" id="t3">
+    <div class="template-header">
+      <div class="template-num">3</div>
+      <div>
+        <h2>Follow-Up 2 / Last Attempt</h2>
+        <div class="when">Day 10 — final outreach before closing</div>
+      </div>
+    </div>
+    <div class="subject-line">
+      <strong>Subject:</strong> <span class="subj-text">Last note — Barcelona Seafood Expo 2026</span>
+    </div>
+    <div class="template-body">
+      <p>Hi <span class="placeholder">[First Name]</span>,</p>
+      <p>This will be my last reach-out on this. We have one <span class="placeholder">[S/M/L]</span> spot remaining in the Norwegian pavilion at Barcelona 2026, and I wanted to offer it to <span class="placeholder">[Company Name]</span> before we close the list.</p>
+      <p>If the timing isn't right, no problem at all — feel free to reach out for future shows. If you'd like to explore it, I can send the details in 5 minutes.</p>
+      <p><span class="sig">Karin</span></p>
+      <div class="tip">&#128161; Tip: Also try a phone call on Day 10. One call often gets more done than three emails.</div>
+    </div>
+  </div>
+
+  <!-- TEMPLATE 4 -->
+  <div class="template" id="t4">
+    <div class="template-header">
+      <div class="template-num">4</div>
+      <div>
+        <h2>Meeting Confirmation</h2>
+        <div class="when">After a call or meeting is booked</div>
+      </div>
+    </div>
+    <div class="subject-line">
+      <strong>Subject:</strong> <span class="subj-text">Confirmed — Barcelona Seafood Expo Briefing, <span class="placeholder">[Date]</span> at <span class="placeholder">[Time]</span></span>
+    </div>
+    <div class="template-body">
+      <p>Hi <span class="placeholder">[First Name]</span>,</p>
+      <p>Great — looking forward to our call on <span class="placeholder">[Date]</span> at <span class="placeholder">[Time]</span> (<span class="placeholder">[Timezone]</span>).</p>
+      <p><strong>We will cover:</strong></p>
+      <ul>
+        <li>What is included in your pavilion package (space, stand, branding, wifi, catering)</li>
+        <li>Booth size options and pricing (S / M / L)</li>
+        <li>Key dates and confirmation deadline</li>
+        <li>Any questions you have</li>
+      </ul>
+      <p>Dial-in: <span class="placeholder">[Teams / Zoom / Phone link]</span></p>
+      <p>See you then,<br><span class="sig">Karin</span></p>
+    </div>
+  </div>
+
+  <!-- TEMPLATE 5 -->
+  <div class="template" id="t5">
+    <div class="template-header">
+      <div class="template-num">5</div>
+      <div>
+        <h2>Proposal Email</h2>
+        <div class="when">After meeting — attach pricing sheet PDF</div>
+      </div>
+    </div>
+    <div class="subject-line">
+      <strong>Subject:</strong> <span class="subj-text">Barcelona Seafood Expo 2026 — Pavilion Proposal for <span class="placeholder">[Company Name]</span></span>
+    </div>
+    <div class="template-body">
+      <p>Hi <span class="placeholder">[First Name]</span>,</p>
+      <p>Thank you for our conversation earlier. As discussed, please find attached the pricing sheet for <span class="placeholder">[Company Name]</span>'s participation in the Norwegian Pavilion at Barcelona Seafood Expo 2026.</p>
+      <p><strong>Summary:</strong></p>
+      <ul>
+        <li>Booth size: <span class="placeholder">[S / M / L]</span></li>
+        <li>Investment: NOK <span class="placeholder">[Amount]</span> + VAT</li>
+        <li>Includes: Stand space, furniture, company signage, wifi, <span class="placeholder">[other inclusions]</span></li>
+        <li>Early bird deadline: <span class="placeholder">[Date]</span> (10% discount applies)</li>
+      </ul>
+      <p>I'm happy to answer any questions or adjust the package. If you'd like to move forward, I can have a contract to you by end of this week.</p>
+      <p>Best regards,<br><span class="sig">Karin</span></p>
+      <div class="tip">&#128073; Attach: <strong>Pricing_Sheet_Barcelona_2026.pdf</strong></div>
+    </div>
+  </div>
+
+  <!-- TEMPLATE 6 -->
+  <div class="template" id="t6">
+    <div class="template-header">
+      <div class="template-num">6</div>
+      <div>
+        <h2>Contract Email</h2>
+        <div class="when">When sending the contract — include e-sign link</div>
+      </div>
+    </div>
+    <div class="subject-line">
+      <strong>Subject:</strong> <span class="subj-text">Contract — <span class="placeholder">[Company Name]</span> / Norwegian Pavilion Barcelona 2026</span>
+    </div>
+    <div class="template-body">
+      <p>Hi <span class="placeholder">[First Name]</span>,</p>
+      <p>Please find below your participation contract for the Norwegian Pavilion at Barcelona Seafood Expo 2026.</p>
+      <p><strong>Sign digitally here (takes under 2 minutes):</strong><br>
+      <span class="placeholder">[DocuSign / Docuseal signing link]</span></p>
+      <p>Once signed, I will send your invoice immediately and your spot is confirmed.</p>
+      <p><strong>Deadline to confirm your spot: <span class="placeholder">[Date]</span></strong></p>
+      <p>Any questions, just call or reply here. Looking forward to having <span class="placeholder">[Company Name]</span> in the pavilion.</p>
+      <p>Best,<br><span class="sig">Karin</span></p>
+      <div class="tip">&#128161; Tip: Follow up after 2 business days if not signed. Check your e-sign tool first — you can see if they opened the link.</div>
+    </div>
+  </div>
+
+  <!-- TEMPLATE 7 -->
+  <div class="template" id="t7">
+    <div class="template-header">
+      <div class="template-num">7</div>
+      <div>
+        <h2>Payment Reminder</h2>
+        <div class="when">Two versions: friendly first, then firm if overdue</div>
+      </div>
+    </div>
+    <div class="template-body">
+      <div class="sub-label">7a — Friendly first reminder (3 days before due)</div>
+      <div class="subject-line" style="margin: 0 -28px 12px; padding-left: 28px;">
+        <strong>Subject:</strong> <span class="subj-text">Reminder: Invoice <span class="placeholder">[#]</span> Due <span class="placeholder">[Date]</span> — Norwegian Pavilion Barcelona 2026</span>
+      </div>
+      <p>Hi <span class="placeholder">[First Name]</span>,</p>
+      <p>Just a friendly reminder that invoice <span class="placeholder">[#]</span> for NOK <span class="placeholder">[Amount]</span> (50% deposit) is due on <span class="placeholder">[Date]</span>.</p>
+      <p><strong>Payment details:</strong><br>
+      Bank: <span class="placeholder">[Bank Name]</span> &nbsp;|&nbsp; Account: <span class="placeholder">[Account No.]</span> &nbsp;|&nbsp; IBAN: <span class="placeholder">[IBAN]</span> &nbsp;|&nbsp; Ref: Invoice <span class="placeholder">[#]</span></p>
+      <p>Let me know if you have any questions or need a different format.</p>
+      <p>Thanks,<br><span class="sig">Karin</span></p>
+
+      <div class="sub-section">
+        <div class="sub-label">7b — Firm second reminder (overdue)</div>
+        <div class="subject-line" style="margin: 0 -28px 12px; padding-left: 28px;">
+          <strong>Subject:</strong> <span class="subj-text">OVERDUE: Invoice <span class="placeholder">[#]</span> — Norwegian Pavilion Barcelona 2026</span>
+        </div>
+        <p>Hi <span class="placeholder">[First Name]</span>,</p>
+        <p>Invoice <span class="placeholder">[#]</span> for NOK <span class="placeholder">[Amount]</span> is now <span class="placeholder">[X]</span> days overdue. Your spot in the pavilion is reserved pending receipt of payment.</p>
+        <p><strong>Please process payment by <span class="placeholder">[Hard Deadline Date]</span>.</strong> After this date we may need to release your spot to other companies on the waiting list.</p>
+        <p>Please confirm receipt of this message.</p>
+        <p><span class="sig">Karin Greve-Isdahl</span> | <span class="placeholder">[Phone]</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEMPLATE 8 -->
+  <div class="template" id="t8">
+    <div class="template-header" style="background: #70AD47;">
+      <div class="template-num" style="background: #375623;">8</div>
+      <div>
+        <h2>Welcome / Confirmed Participant &#127881;</h2>
+        <div class="when">After contract signed AND deposit received</div>
+      </div>
+    </div>
+    <div class="subject-line">
+      <strong>Subject:</strong> <span class="subj-text">You're confirmed! Norwegian Pavilion — Barcelona Seafood Expo 2026</span>
+    </div>
+    <div class="template-body">
+      <p>Hi <span class="placeholder">[First Name]</span>,</p>
+      <p>Fantastic — <span class="placeholder">[Company Name]</span> is officially confirmed for the Norwegian Pavilion at Barcelona Seafood Expo 2026!</p>
+      <p><strong>Here is what happens next:</strong></p>
+      <ul>
+        <li>Exhibitor information pack — I will send this within 5 business days</li>
+        <li>Branding deadline: <span class="placeholder">[Date]</span> — please send your logo (EPS/PNG) and a 50-word company description</li>
+        <li>Build day: <span class="placeholder">[Date]</span> — access from <span class="placeholder">[Time]</span>. Arrival instructions to follow.</li>
+        <li>Show opens: <span class="placeholder">[Date]</span> at <span class="placeholder">[Time]</span></li>
+      </ul>
+      <p>Welcome to the team. Let's make it a great show!</p>
+      <p><span class="sig">Karin Greve-Isdahl</span><br><span class="placeholder">[Phone]</span> | <span class="placeholder">[Email]</span></p>
+    </div>
+  </div>
+
+  <p style="text-align:center;font-size:9pt;color:#aaa;margin-top:20px;padding-bottom:20px;">
+    Norwegian Pavilion — Barcelona Seafood Expo 2026 &nbsp;|&nbsp; All templates are starting points — personalise before sending
+  </p>
+
+</div>
+</body>
+</html>

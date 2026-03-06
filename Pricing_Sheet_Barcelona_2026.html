@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Norway Pavilion — Seafood Expo Global Barcelona 2026</title>
+<style>
+  @page { size: A4; margin: 16mm 14mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    font-size: 11pt;
+    color: #1a1a1a;
+    background: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 28px 24px;
+  }
+
+  /* ---- HEADER ---- */
+  .header {
+    display: flex;
+    align-items: stretch;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .header-flag {
+    background: #EF2B2D;
+    width: 12px;
+    flex-shrink: 0;
+  }
+  .header-main {
+    background: #EF2B2D;
+    color: #fff;
+    padding: 20px 26px 18px;
+    flex: 1;
+  }
+  .header-logo-area {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    border-left: 1px solid #f0f0f0;
+    min-width: 130px;
+  }
+  .in-logo {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #EF2B2D;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .in-logo .sub { font-weight: 400; font-size: 8pt; color: #666; display: block; margin-top: 2px; }
+  .flag-icon { font-size: 28pt; margin-bottom: 4px; display: block; }
+  .header-main h1 { font-size: 19pt; font-weight: 700; line-height: 1.2; }
+  .header-main h2 { font-size: 10.5pt; font-weight: 400; opacity: 0.92; margin-top: 5px; }
+
+  .header-bar {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 7px 26px;
+    font-size: 9.5pt;
+    margin-bottom: 22px;
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .header-bar span { opacity: 0.9; }
+  .header-bar strong { opacity: 1; color: #fff; }
+
+  /* ---- SECTION TITLES ---- */
+  .section-title {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #EF2B2D;
+    border-bottom: 2px solid #EF2B2D;
+    padding-bottom: 4px;
+    margin: 20px 0 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
+  /* ---- BOOTH TABLE ---- */
+  .booth-table { width: 100%; border-collapse: collapse; margin-bottom: 4px; }
+  .booth-table th {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 8px 11px;
+    text-align: left;
+    font-size: 9.5pt;
+    font-weight: 600;
+  }
+  .booth-table th.right { text-align: right; }
+  .booth-table td {
+    padding: 9px 11px;
+    border-bottom: 1px solid #e8e8e8;
+    vertical-align: middle;
+    font-size: 10pt;
+  }
+  .booth-table td.right { text-align: right; }
+  .booth-table tr:nth-child(even) td { background: #fafafa; }
+  .booth-table tr:last-child td { border-bottom: none; }
+
+  .size-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #EF2B2D;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14pt;
+    width: 36px; height: 36px;
+    border-radius: 4px;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  .size-badge.m { background: #c0392b; }
+  .size-badge.l { background: #922b21; }
+
+  .price-big { font-size: 13pt; color: #1a1a1a; font-weight: 700; }
+  .price-eb { font-size: 12pt; color: #27ae60; font-weight: 700; }
+  .price-note { font-size: 8.5pt; color: #888; display: block; }
+
+  /* ---- INCLUSIONS ---- */
+  .inclusions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 18px;
+    margin: 6px 0 4px;
+  }
+  .inc-item {
+    display: flex;
+    gap: 7px;
+    font-size: 10pt;
+    align-items: flex-start;
+    color: #333;
+  }
+  .check { color: #EF2B2D; font-weight: 700; font-size: 12pt; flex-shrink: 0; line-height: 1.2; }
+
+  /* ---- EARLY BIRD ---- */
+  .early-bird {
+    background: #FFF8E1;
+    border: 2px solid #F39C12;
+    border-radius: 5px;
+    padding: 12px 18px;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .early-bird .icon { font-size: 24pt; flex-shrink: 0; }
+  .early-bird h3 { color: #7D6608; font-size: 11pt; margin-bottom: 2px; }
+  .early-bird p { font-size: 9.5pt; color: #5D4E0A; }
+
+  /* ---- PAYMENT ---- */
+  .payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 8px 0;
+  }
+  .payment-box {
+    border: 1px solid #e0e0e0;
+    border-top: 3px solid #EF2B2D;
+    border-radius: 4px;
+    padding: 11px 14px;
+    background: #fafafa;
+  }
+  .payment-box .label { font-weight: 700; color: #1a1a1a; font-size: 10pt; }
+  .payment-box .amount { font-size: 13pt; color: #EF2B2D; font-weight: 700; margin-top: 3px; }
+  .payment-box .note { font-size: 8.5pt; color: #666; margin-top: 3px; }
+
+  /* ---- DATES ---- */
+  .dates-list { list-style: none; margin: 6px 0; }
+  .dates-list li {
+    display: flex;
+    gap: 10px;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 9.5pt;
+  }
+  .dates-list li:last-child { border-bottom: none; }
+  .date-val { font-weight: 700; color: #1a1a1a; min-width: 130px; }
+
+  /* ---- NOTE BOX ---- */
+  .note-box {
+    background: #fafafa;
+    border-left: 3px solid #EF2B2D;
+    padding: 8px 12px;
+    font-size: 9pt;
+    color: #555;
+    margin: 8px 0 4px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  /* ---- IN BADGE ---- */
+  .in-badge {
+    background: #EF2B2D;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 9.5pt;
+    font-weight: 600;
+    display: inline-block;
+    margin: 12px 0 6px;
+  }
+
+  /* ---- CTA ---- */
+  .cta {
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 4px;
+    padding: 14px 22px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .cta .left h3 { font-size: 11pt; margin-bottom: 3px; }
+  .cta .left p { font-size: 9.5pt; opacity: 0.85; }
+  .cta .right {
+    text-align: right;
+    font-size: 9.5pt;
+    opacity: 0.9;
+    line-height: 1.7;
+    flex-shrink: 0;
+  }
+  .cta .right strong { font-size: 10.5pt; opacity: 1; }
+
+  .footer-note {
+    text-align: center;
+    font-size: 8pt;
+    color: #bbb;
+    margin-top: 16px;
+  }
+
+  .powered {
+    background: #EF2B2D;
+    color: #fff;
+    font-size: 8.5pt;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  @media print {
+    body { padding: 0; }
+    .no-print { display: none; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-flag"></div>
+    <div class="header-main">
+      <span class="flag-icon">&#127475;&#127476;</span>
+      <h1>Norway Pavilion</h1>
+      <h2>Seafood Expo Global &amp; Seafood Processing Global — Barcelona 2026<span class="powered">Powered by Nature</span></h2>
+    </div>
+    <div class="header-logo-area">
+      <div class="in-logo">
+        INNOVATION<br>NORWAY
+        <span class="sub">Business Norway</span>
+      </div>
+    </div>
+  </div>
+  <div class="header-bar">
+    <span>&#128197; <strong>21–23 April 2026</strong></span>
+    <span>&#128205; Fira de Barcelona, Gran Via — Hall 3</span>
+    <span>&#128101; Organiser: <strong>Karin Greve-Isdahl</strong> &nbsp;|&nbsp; <span style="opacity:.7">[Phone] &nbsp;|&nbsp; [Email]</span></span>
+  </div>
+
+  <!-- BOOTH OPTIONS -->
+  <div class="section-title">Booth Package Options</div>
+  <table class="booth-table">
+    <thead>
+      <tr>
+        <th style="width:55px">Size</th>
+        <th>Floor Space</th>
+        <th>Best For</th>
+        <th class="right">Standard Price (NOK)</th>
+        <th class="right">Early Bird Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="size-badge">S</span></td>
+        <td><strong>6 m²</strong><br><span style="color:#888;font-size:8.5pt">3m × 2m</span></td>
+        <td>First-time exhibitors, focused product display, smaller companies</td>
+        <td class="right">
+          <span class="price-big">NOK 35,000</span>
+          <span class="price-note">+ VAT</span>
+        </td>
+        <td class="right">
+          <span class="price-eb">NOK 31,500</span>
+          <span class="price-note">10% off — see deadline below</span>
+        </td>
+      </tr>
+      <tr>
+        <td><span class="size-badge m">M</span></td>
+        <td><strong>9 m²</strong><br><span style="color:#888;font-size:8.5pt">3m × 3m</span></td>
+        <td>Established exporters, product range display, small meeting space</td>
+        <td class="right">
+          <span class="price-big">NOK 55,000</span>
+          <span class="price-note">+ VAT</span>
+        </td>
+        <td class="right">
+          <span class="price-eb">NOK 49,500</span>
+          <span class="price-note">10% off — see deadline below</span>
+        </td>
+      </tr>
+      <tr>
+        <td><span class="size-badge l">L</span></td>
+        <td><strong>12 m²</strong><br><span style="color:#888;font-size:8.5pt">4m × 3m</span></td>
+        <td>Premium presence, live demos, dedicated meeting area, multiple staff</td>
+        <td class="right">
+          <span class="price-big">NOK 75,000</span>
+          <span class="price-note">+ VAT</span>
+        </td>
+        <td class="right">
+          <span class="price-eb">NOK 67,500</span>
+          <span class="price-note">10% off — see deadline below</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="note-box">
+    Network Partner packages also available from NOK 15,000 — logo placement, expo catalogue listing, access to Norway Pavilion networking events. Contact Karin Greve-Isdahl for details.
+  </div>
+
+  <!-- WHAT'S INCLUDED -->
+  <div class="section-title">What's Included — All Packages</div>
+  <div class="inclusions-grid">
+    <div class="inc-item"><span class="check">&#10003;</span> Floor space in the Norway Pavilion, Hall 3, Fira Barcelona</div>
+    <div class="inc-item"><span class="check">&#10003;</span> Stand construction, furniture and dismantling</div>
+    <div class="inc-item"><span class="check">&#10003;</span> Company fascia sign — name and logo</div>
+    <div class="inc-item"><span class="check">&#10003;</span> Electricity connection (1 standard outlet)</div>
+    <div class="inc-item"><span class="check">&#10003;</span> Wifi access via shared pavilion connection</div>
+    <div class="inc-item"><span class="check">&#10003;</span> Norway Pavilion joint branding and visibility</div>
+    <div class="inc-item"><span class="check">&#10003;</span> Company listing in official Seafood Expo catalogue</div>
+    <div class="inc-item"><span class="check">&#10003;</span> 2 exhibitor passes (S) / 3 passes (M) / 4 passes (L)</div>
+    <div class="inc-item"><span class="check">&#10003;</span> On-site support from pavilion coordinator</div>
+    <div class="inc-item"><span class="check">&#10003;</span> Pre-show networking event — Norway delegation</div>
+  </div>
+  <div class="note-box">
+    <strong>Optional add-ons:</strong> Extra electricity outlets &mdash; Refrigeration unit &mdash; Live product sampling setup &mdash; Video screen rental &mdash; Additional exhibitor passes &mdash; Meeting room access
+  </div>
+
+  <!-- IN SUPPORT -->
+  <span class="in-badge">&#127475;&#127476; Innovation Norway / Business Norway Support</span>
+  <div class="note-box" style="margin-top:4px">
+    This pavilion is organised in partnership with Innovation Norway and Business Norway. Participating companies may be eligible for <strong>Innovation Norway IBE funding</strong> to offset participation costs. Ask your IN contact or speak to Karin Greve-Isdahl for guidance on applying.
+  </div>
+
+  <!-- EARLY BIRD -->
+  <div class="early-bird">
+    <div class="icon">&#9203;</div>
+    <div>
+      <h3>Early Bird — 10% Discount</h3>
+      <p>Confirm and pay your deposit by <strong>[Early Bird Deadline Date]</strong> to lock in a 10% discount. Strictly limited — first-come, first-served. Non-transferable.</p>
+    </div>
+  </div>
+
+  <!-- PAYMENT TERMS -->
+  <div class="section-title">Payment Terms</div>
+  <div class="payment-grid">
+    <div class="payment-box">
+      <div class="label">&#128198; On Contract Signing</div>
+      <div class="amount">50% Deposit</div>
+      <div class="note">Secures your spot. Invoice issued within 24h of signed contract.</div>
+    </div>
+    <div class="payment-box">
+      <div class="label">&#128198; 60 Days Before Show</div>
+      <div class="amount">50% Balance</div>
+      <div class="note">Final payment due approx. <strong>20 February 2026</strong>. Stand assignment confirmed on receipt.</div>
+    </div>
+  </div>
+  <div class="note-box">
+    Payment by bank transfer in NOK. All prices exclude VAT where applicable. Late payment may result in spot being released. Full terms in contract.
+  </div>
+
+  <!-- KEY DATES -->
+  <div class="section-title">Key Dates</div>
+  <ul class="dates-list">
+    <li><span class="date-val">[Date] 2025</span> Early bird discount deadline — 10% off if confirmed by this date</li>
+    <li><span class="date-val">[Date] 2026</span> Last date to confirm participation — spot deadline</li>
+    <li><span class="date-val">[Date] 2026</span> Branding materials due — logo (EPS/PNG) + 50-word company description</li>
+    <li><span class="date-val">~20 Feb 2026</span> Balance payment due (60 days before show)</li>
+    <li><span class="date-val">20 April 2026</span> Build day — stand access from [Time], Fira Barcelona Hall 3</li>
+    <li><span class="date-val">21 April 2026</span> Seafood Expo Global opens — show day 1</li>
+    <li><span class="date-val">23 April 2026</span> Show closes — dismantling from [Time]</li>
+  </ul>
+
+  <!-- CTA -->
+  <div class="cta">
+    <div class="left">
+      <h3>&#127475;&#127476; Ready to join the Norway Pavilion?</h3>
+      <p>Spots are limited — Seafood Expo Global 2026 attracts 35,000+ professionals from 150 countries.</p>
+    </div>
+    <div class="right">
+      <strong>Karin Greve-Isdahl</strong><br>
+      [Phone]<br>
+      [Email]
+    </div>
+  </div>
+
+  <p class="footer-note">
+    Norway Pavilion &mdash; Seafood Expo Global &amp; Seafood Processing Global, Barcelona 21–23 April 2026 &mdash; Organised in partnership with Innovation Norway / Business Norway &mdash; Prices valid until [Date]
+  </p>
+
+  <p class="footer-note no-print" style="margin-top:10px; border-top:1px dashed #ddd; padding-top:8px;">
+    To save as PDF: Press Ctrl+P &rarr; Save as PDF
+  </p>
+
+</body>
+</html>
